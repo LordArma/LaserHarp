@@ -4,6 +4,13 @@
 // address we will assign if dual sensor is present
 #define LOX1_ADDRESS 0x30
 #define LOX2_ADDRESS 0x31
+#define LOX3_ADDRESS 0x32
+#define LOX4_ADDRESS 0x33
+#define LOX5_ADDRESS 0x34
+#define LOX6_ADDRESS 0x35
+#define LOX7_ADDRESS 0x36
+#define LOX8_ADDRESS 0x37
+#define LOX9_ADDRESS 0x38
 
 // set the pins to shutdown
 #define SHT_LOX1 7
@@ -12,10 +19,24 @@
 // objects for the vl53l0x
 Adafruit_VL53L0X lox1 = Adafruit_VL53L0X();
 Adafruit_VL53L0X lox2 = Adafruit_VL53L0X();
+Adafruit_VL53L0X lox3 = Adafruit_VL53L0X();
+Adafruit_VL53L0X lox4 = Adafruit_VL53L0X();
+Adafruit_VL53L0X lox5 = Adafruit_VL53L0X();
+Adafruit_VL53L0X lox6 = Adafruit_VL53L0X();
+Adafruit_VL53L0X lox7 = Adafruit_VL53L0X();
+Adafruit_VL53L0X lox8 = Adafruit_VL53L0X();
+Adafruit_VL53L0X lox9 = Adafruit_VL53L0X();
 
 // this holds the measurement
 VL53L0X_RangingMeasurementData_t measure1;
 VL53L0X_RangingMeasurementData_t measure2;
+VL53L0X_RangingMeasurementData_t measure3;
+VL53L0X_RangingMeasurementData_t measure4;
+VL53L0X_RangingMeasurementData_t measure5;
+VL53L0X_RangingMeasurementData_t measure6;
+VL53L0X_RangingMeasurementData_t measure7;
+VL53L0X_RangingMeasurementData_t measure8;
+VL53L0X_RangingMeasurementData_t measure9;
 
 // First parameter is the event type (0x09 = note on, 0x08 = note off).
 // Second parameter is note-on/note-off, combined with the channel.
